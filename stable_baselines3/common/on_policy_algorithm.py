@@ -258,15 +258,6 @@ class OnPolicyAlgorithm(BaseAlgorithm):
 
             self.train()
 
-        if self.use_n_step_advantage:
-            self.logger.log("========================================================")
-            self.logger.log("Shyamal HW 1.3 AIPI530 - using nstep returns & advantage")
-            self.logger.log("========================================================")
-        else:
-            self.logger.log("========================================================")
-            self.logger.log("Shyamal HW 1.3 AIPI530 - using vanilla returns & advantage")
-            self.logger.log("========================================================")
-
         callback.on_training_end()
 
         return self
